@@ -1,5 +1,6 @@
 package ru.todos;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import ru.todos.model.Task;
@@ -18,7 +19,7 @@ public class PostTask {
         installSpec();
     }
 
-    @Before
+    @After
     public void after() {
         deleteAll();
     }
